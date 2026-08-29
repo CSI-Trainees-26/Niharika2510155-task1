@@ -279,18 +279,6 @@ main{
     font-weight: 700;
     backdrop-filter: blur(20px);
 }
-.card-section{
-    margin-block: auto;
-    margin-inline: auto;
-    width: 70%;
-    height: 35%;
-    border-radius: 20px;
-    border: 2px solid white;
-    background-color: transparent;
-    font-size: clamp(.8rem, 2vw, 2em);
-    font-weight: 700;
-    backdrop-filter: blur(20px);
-}
 .card:hover{
     transform: translateY(-20px);
 }
