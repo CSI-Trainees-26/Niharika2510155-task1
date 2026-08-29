@@ -521,3 +521,94 @@ main{
     font-size: 15px;
     font-weight: 700;
 }
+
+/* TOP RATED GAMES */
+
+#top-rated{
+    background-color: #040413;
+    background-image: url("images/top-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.top-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 160px;
+    font-size: 30px;
+}
+
+.top-games {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 350px);
+    width: 80%;
+    gap: 80px;
+    row-gap: 250px;
+    padding-block: 100px;
+    position: relative;
+    top: 170px;
+    margin-inline: auto;
+    padding-bottom: 300px;
+}
+.top-game-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    background-color: rgba(1, 2, 33, 0.35);
+    box-shadow: 0 0 15px 5px #060f2c;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+    backdrop-filter: blur(10px);
+    animation: fade linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+.top-game-info h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    text-shadow: 0 3px 6px rgb(83, 83, 83);
+}
+.top-subtitle {
+    color: #3ec9d6 !important;
+    font-size: 18px !important;
+    margin-bottom: 15px;
+}
+.top-game-info p {
+    color: rgb(190, 188, 188);
+    font-size: 16px;
+    line-height: 1.5;
+}
+.top-rating {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #e8862e;
+}
+.top-game-img {
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px #060f2c;
+    transition: all 0.5s ease-in-out;
+    animation: fade linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+.top-game-img:hover, .top-game-info:hover{
+    transform: translateY(-10px);
+}
+#top-game1 {
+    background-image: url("images/top1.webp");
+}
+#top-game2 {
+    background-image: url("images/top2.avif");
+}
+#top-game3 {
+    background-image: url("images/top3.jpg");
+}
