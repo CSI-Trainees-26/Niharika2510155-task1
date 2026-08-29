@@ -149,3 +149,132 @@ body{
 }
 
 /* HEADER ENDS */
+
+/* MAIN STARTS */
+
+main{
+    background-color:#01020f;
+}
+.section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 30px;
+    animation: fade linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+#Popular{
+    padding-top: 70px;
+}
+.section-heading{
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-shadow: 0 3px 6px rgb(83, 83, 83);
+    margin-bottom: 10px;
+}
+.section-text{
+    color: rgb(190, 188, 188);
+    font-size: 20px;
+}
+.view{
+    height: 30px;
+}
+#view{
+    height: 30px;
+    background-color: transparent;
+    border: none;
+     font-size: 20px;
+}
+.section-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);     
+    gap: 20px;                              
+    padding: 40px;
+    animation: fade linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+        scale: .5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  height: 170px;
+  width: 20vw;
+  padding-inline: 20px;
+  padding-block: 15px;
+  background-color: #071336;
+  box-shadow: 0 0 15px 5px #071336;
+  border-radius: 10px;
+  transition: all .5s ease-in-out;
+}
+#card1{
+    background-image: url("images/Cyberpunk.png");
+    background-size: cover;
+    background-position: center;
+}
+#card2{
+    background-image: url("images/pubg.webp");
+    background-size: cover;
+    background-position: center;
+}
+#card3{
+    background-image: url("images/Survival.webp");
+    background-size: cover;
+    background-position: center;
+}
+#card4{
+    background-image: url("images/RPG.webp");
+    background-size: cover;
+    background-position: center;
+}
+#card5{
+    background-image: url("images/Tony\ Hawk\'s.webp");
+    background-size: cover;
+    background-position: center;
+}
+#card6{
+    background-image: url("images/Grand\ Theft\ Auto.webp");
+    background-size: cover;
+    background-position: center;
+}
+#card7{
+    background-image: url("images/Elden\ Ring.jpg");
+    background-size: cover;
+    background-position: center;
+}
+#card8{
+    background-image: url("images/Super\ Mario\ Galaxy\ 2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.card-section{
+    margin-block: auto;
+    margin-inline: auto;
+    width: 70%;
+    height: 35%;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    font-size: clamp(.8rem, 2vw, 2em);
+    font-weight: 700;
+    backdrop-filter: blur(20px);
+}
+.card:hover{
+    transform: translateY(-20px);
+}
+
+/* MAIN ENDS */
