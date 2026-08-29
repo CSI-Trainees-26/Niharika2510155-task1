@@ -380,3 +380,144 @@ main{
 }
 
 /* HEADER ENDS */
+
+/* MAIN STARTS */
+
+.individual-cat{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px;
+    animation: fade linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+}
+#sci{
+    padding-top: 60px;
+}
+.card-heading{
+    font-size: 50px;
+    text-shadow: 0 3px 6px rgb(83, 83, 83);
+    padding-bottom: 10px;
+}
+.card-subhead{
+    margin-top: 10px;
+    color: rgb(190, 188, 188);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.btn{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.keyword{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: auto;
+    height: 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+.cat-main-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+.cat-main-card{
+    height: 350px;
+    width: 100%;
+    background-color: rgb(1, 2, 33);
+    box-shadow: 0 0 15px 5px #060f2c;
+    border-radius: 10px;
+    animation: fade linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 40%;
+    transition: all 0.5s ease-in-out;
+    overflow: hidden;
+}
+.cat-main-card:hover{
+    transform: translateY(-20px);
+}
+.cat-main-card-img{
+    height: 55%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+#cat-card1{
+    background-image: url("images/cyber1.jpg");
+}
+#cat-card2{
+    background-image: url("images/cyber2.jpg");
+}
+#cat-card3{
+    background-image: url("images/cyber3.jpg");
+}
+#cat-card4{
+    background-image: url("images/cyber4.jpg");
+}
+#cat-card5{
+    background-image: url("images/action1.jpeg");
+}
+#cat-card6{
+    background-image: url("images/action2.jpg");
+}
+#cat-card7{
+    background-image: url("images/action3.jpg");
+}
+#cat-card8{
+    background-image: url("images/action4.jpg");
+}
+#cat-card9{
+    background-image: url("images/survival1.png");
+}
+#cat-card10{
+    background-image: url("images/survival2.jpg");
+}
+#cat-card11{
+    background-image: url("images/survival3.jpg");
+}
+#cat-card12{
+    background-image: url("images/survival4.jpg");
+}
+#cat-card13 {
+    background-image: url("images/rpg1.jpg");
+}
+#cat-card14 {
+    background-image: url("images/rpg2.webp");
+}
+#cat-card15 {
+    background-image: url("images/rpg3.jpg");
+}
+#cat-card16 {
+    background-image: url("images/rpg4.jpg");
+}
+.game-info{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 5px;
+
+}
+.game-info h3{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.game-info p {
+    color: rgb(190, 188, 188);
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
+.game-info span {
+    font-size: 15px;
+    font-weight: 700;
+}
