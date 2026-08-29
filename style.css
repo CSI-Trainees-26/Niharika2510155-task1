@@ -213,7 +213,7 @@ main{
   flex-direction: column;
   color: white;
   height: 170px;
-  width: 20vw;
+  width: 100%;
   padding-inline: 20px;
   padding-block: 15px;
   background-color: #071336;
@@ -629,4 +629,134 @@ main{
 }
 #top-game3 {
     background-image: url("images/top3.jpg");
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px){
+
+    /* NAVBAR */
+    .nav{
+        padding: 20px;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .nav-heading{
+        font-size: 25px;
+    }
+    .nav-links{
+        gap: 20px;
+    }
+    .link, .cat-link{
+        font-size: 16px;
+    }
+    .search{
+        width: 120px;
+    }
+
+    /* HOME HERO */
+    .main-content{
+        min-height: 100vh;
+    }
+    .main-text{
+        width: 90%;
+        left: 5%;
+        margin-top: 100px;
+        font-size: 22px;
+    }
+    .hero-para{
+        font-size: 16px;
+    }
+
+    /* HOME SECTIONS */
+    .section{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 25px;
+    }
+    .section-heading{
+        font-size: 30px;
+    }
+    .section-text{
+        font-size: 16px;
+    }
+    .section-cards{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+    .card{
+        width: 100%;
+    }
+
+    /* CATEGORY HEADER */
+    .cat-main-text{
+        width: 90%;
+        left: 5%;
+        font-size: 22px;
+    }
+    .cat-cards{
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-top: 30px;
+    }
+
+    /* CATEGORY GAME CARDS */
+    .cat-main-cards{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 15px;
+    }
+    .cat-main-card{
+        height: 330px;
+    }
+    .card-heading{
+        font-size: 35px;
+    }
+    .game-info p{
+        font-size: 10px;
+    }
+    .card-subhead{
+        font-size: 17px;
+    }
+    .btn{
+        flex-wrap: wrap;
+    }
+
+
+    /* TOP RATED */
+    .top-head{
+        font-size: 22px;
+    }
+    .top-games{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 90%;
+        gap: 30px;
+        row-gap: 50px;
+        padding-bottom: 150px;
+    }
+    .top-game-info{
+        min-height: 300px;
+        padding: 25px;
+    }
+    .top-game-img{
+        height: 300px;
+    }
+
+    /* FOOTER */
+    .foot{
+        grid-template-columns: 1fr;
+        padding: 25px;
+    }
+
+    .footer-cards{
+        height: auto;
+    }
+
+    .foot-card-head{
+        font-size: 30px;
+    }
+
 }
