@@ -82,7 +82,7 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
-.main-content::after{
+.main-content::after, .cat-main-content::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -342,6 +342,8 @@ main{
 
 .cat-main-content{
     background-image: url('images/all-cat.webp');
+    background-size: cover;
+    background-position: center;
     height: 100vh;
 }
 .cat-main-text{
