@@ -750,11 +750,9 @@ main{
         grid-template-columns: 1fr;
         padding: 25px;
     }
-
     .footer-cards{
         height: auto;
     }
-
     .foot-card-head{
         font-size: 30px;
     }
