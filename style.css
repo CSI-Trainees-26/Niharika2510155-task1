@@ -331,3 +331,52 @@ main{
 .cat-link{
     color: white;
 }
+
+/* HEADER STARTS */
+
+.cat-main-content{
+    background-image: url('images/all-cat.webp');
+    height: 100vh;
+}
+.cat-main-text{
+    display: block;
+    padding-top: 150px;
+    /* padding-bottom: 40px; */
+    border-radius: 30px;
+    font-size: 30px;
+    width: 80%;
+    position: absolute;
+    left: 50px;
+    top: 150px;
+    backdrop-filter: blur(1.5px);
+    animation: fade-up ease-in;
+    animation-timeline: scroll(); 
+    animation-range: 0% 100%;
+}
+.cat-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 70px;
+    padding-top: 70px;
+}
+.cat-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    border: 3px solid white;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+#cat-a{
+    text-decoration: none;
+}
+#cat-a:hover{
+    color:#e8862e;
+}
+
+/* HEADER ENDS */
